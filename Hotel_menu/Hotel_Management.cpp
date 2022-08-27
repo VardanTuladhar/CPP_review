@@ -34,7 +34,7 @@ int main()
     cout << " \n 5) Shakes $8";
     cout << " \n 6) Chicken $15";
     cout << " \n 7) Information about sales and collection today";
-    cout << " \n 8)Exit";
+    cout << " \n 8) Exit";
     
     
     cout << "\n\n Please Enter your choice:";
@@ -79,7 +79,7 @@ int main()
 		if (Qburger - Sburger >= quant)
 		{
 			Sburger = Sburger + quant;
-			Total_burger = ( Total_burger + quant) *1200;
+			Total_burger = ( Total_burger + quant) *12;
 			cout << "\n You have purchased "<< quant <<" rooms for $" << Total_burger << endl; 
 
 		}
@@ -94,13 +94,43 @@ int main()
 		if (Qnoodles - Snoodles >= quant)
 		{
 			Snoodles = Snoodles + quant;
-			Total_noodles = ( Total_noodles + quant) *12;
+			Total_noodles = ( Total_noodles + quant) *10;
 			cout << "\n You have purchased "<< quant <<" rooms for $" << Total_noodles << endl; 
 
 		}
         else 
         {
             cout << "Only " << Qnoodles - Snoodles<< " rooms are remaining"; 
+        }
+        break;
+    case 5:
+		cout << "\n \n How many rooms: ";
+		cin >> quant;
+		if (Qshake - Sshake >= quant)
+		{
+			Sshake = Sshake + quant;
+			Total_shake = ( Total_shake + quant) *8;
+			cout << "\n You have purchased "<< quant <<" rooms for $" << Total_shake << endl; 
+
+		}
+        else 
+        {
+            cout << "Only " << Qshake - Sshake<< " rooms are remaining"; 
+        }
+        break;
+    case 6:
+    	cout << "\n \n How many Pastas do you want: ";
+		cin >> quant;
+		if (Qchicken - Schicken >= quant)
+		{
+			Schicken = Schicken + quant;
+			Total_chicken = ( Total_chicken + quant) *15;
+			cout << "\n You have purchased "<< quant <<" rooms for $" << Total_chicken << endl; 
+
+		}
+        else 
+        {
+            cout << "Only " << Qchicken - Schicken<< " rooms are remaining"; 
         }
         break;
 
